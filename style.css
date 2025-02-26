@@ -10,10 +10,33 @@
 
 body{
     background-color: #e8f1f2;
+    overflow-x: hidden;
+}
+
+p{
+    color: #e8f1f2;
+    font-family: 'Roboto';
+}
+
+a{
+    color: #e8f1f2;
+    font-family: 'Roboto';    
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'nordhead';
+    color: #e8f1f2;
+    font-size: 40px;
+}
+h2{
+    font-family: 'nordhead';
+    color: #e8f1f2;
+    font-size: 20px;
 }
 
 #menu{
-    background-color: #13293d;
+    background-color: #451531;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,35 +51,42 @@ body{
     margin: 0 35vw;
 }
 
-#fundoApresentacao{
-    background-image: url(imgs/backiee-91181.jpg);
-    background-attachment: fixed;
+#fundoApresentacao{ 
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40vh;
+    background-position: top;
     padding: 50px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    background-image: url(imgs/imagemcefet.jpg);
 }
 
+
+
 #apresentacao{
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #13293d;
+    background-color: #451531;
     width: 500px;
     height: 300px;
     padding: 15px;
     text-align: center;
     border-radius: 15px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);   
 }
 
+
+
 #apresentacao img{
-    width: 100px;
+    width: 130px;
     border-radius: 50%;
-    margin: 20px 0 10px 0;
+    margin: 0;
+    position: relative;
+    bottom: 50px;
 }
 #apresentacao p{
     margin: 20px 15px 30px 15px;
@@ -68,4 +98,252 @@ body{
     font-family: 'nordhead';
     color: #e8f1f2;
     font-size: 40px;
+}
+#informacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+
+}
+#informacoes div{
+    background-color: #b3093f;
+    margin: 0 50px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 350px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+#informacoes svg{
+    margin: 0 15px;
+}
+
+#francisco{
+    background-color: #13293d;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#francisco p {
+    text-align: center;
+    margin: 25px 150px 0 150px;
+}
+#francisco h1{
+    text-align: center;
+    margin: 0px 150px 0 150px;
+}
+
+#bolinhas{
+    display: grid;
+    grid-template-columns: 10vw 20vw 20vw 20vw 20vw 10vw;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-top: 25px;
+    background-color: #13293d;
+    place-items: center; 
+}
+
+#bolinhas div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #b3093f;
+    border-radius: 50%;
+    border: solid 5px #451531;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#bolinhas div:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#bolinhas div:nth-child(1) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#bolinhas div:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#bolinhas div:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#bolinhas div:nth-child(4) {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+#porque{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    background-color: #13293d;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#porque div{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#porque p{
+    text-align: left;
+    margin: 25px 25% 0 80px;
+}
+#porque h1{
+    text-align: left;
+    margin: 0px 25% 0 80px;
+}
+
+#porque video{
+    width: 500px;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: solid 5px #451531;
+    margin: 0 auto;
+
+}
+
+#barra{
+    height: 5px;
+    width: 90vw;
+    border-radius: 15px;
+    background-color: #b3093f;
+    margin: 0 auto;
+}
+
+#principal{
+    background-color: #13293d;
+}
+
+#voltar-topo {
+    background-color: #e8f1f2;
+    border-radius: 20%;
+    border: 2px solid #b3093f;
+    font-size: 35px;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+}
+
+#voltar-topo:active {
+    opacity: 0.7;
+
+}
+
+#abaAbrida{
+    background-color: #451531;
+    border: solid 5px #b3093f;
+    border-top: #451531;
+    position: relative;
+    height: 50vh;
+    width: 15vw;
+    top: 10vh;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    flex-direction: column;
+    position: absolute;
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out;
+}
+
+#abaAbrida h2{
+    margin: 50px 20px 0 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #e8f1f2;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.lista-menu{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#abaAbrida li{
+    list-style-type: none;
+    margin: 40px 0;
+}
+
+#abaAbrida a{   
+    text-decoration: none; /* Remove sublinhado */
+    color: #e8f1f2; /* Cor do texto */
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#abaAbrida a:hover {
+    color: #ff5470;
+    transform: scale(1.1); /* Pequeno efeito de zoom ao passar o mouse */
+}
+
+#abaAbrida.active {
+    display: flex !important;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#admissao{
+    background-color: #451531;
+    display: grid;
+    grid-template-columns: 70vw 30vw;
+    height: 40vw;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px #b3093f;
+}
+
+#admissao div:nth-child(1){
+    margin: 0 80px 0 80px;
+}
+
+#admissao div:nth-child(2) img{
+    margin: 0 auto;
+    width: calc(30vw - 12px);
+    height: 40vw;
+}
+
+#admissao p{
+    text-align: left;
+    margin: 25px 25% 50px 0;
+}
+
+#admissao h2{
+    margin-bottom: 25px;
+}
+
+#admissao li{
+    color: #e8f1f2;
+    font-family: 'Roboto';
+    margin: 10px 0 10px 20px;
 }
